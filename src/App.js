@@ -1,23 +1,36 @@
-import logo from './logo.svg';
 import './App.css';
+import picture from './music-clipart.png';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          IN TUNE
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div> 
+      <div className="row">
+        <div className="column">
+      <text
+            style={{
+              fontSize: 400,
+              color: 'white',
+            }}>
+            In Tune
+          </text>
+      </div>
+        <div className="column2">
+          <text
+            style={{
+              fontSize: 20,
+              color: 'black',
+              
+            }} className="text3">
+              Where the music happens.
+            </text>
+          <input type="text" id="username" name="username" className="text1"></input>
+          <input type="text" id="password" name="password" className="text2"></input>
+          <button className="button1">sign in</button>
+          <button className="button2">create account</button>
+          <img className="image" src={picture} alt="music"/>
+        </div>
+      </div>
+      
     </div>
   );
 }
