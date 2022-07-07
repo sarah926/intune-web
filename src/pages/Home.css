@@ -1,0 +1,95 @@
+.row {
+    display: flex;
+    background-color: red;
+    min-height: 900px;
+    display: inline;
+}
+.column {
+    flex: 50%;
+    max-width: 50%;
+    background-color: lightseagreen;
+    min-height: 100%;
+    height: 100%;
+}
+.column2 {
+    flex: 50%;
+    background-color: white;
+    align-items: center;
+}
+.signButton{
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 100px;
+    margin-left: 62%;
+    font-family: 'Open Sans';
+    padding: 15px 40px;
+}
+.createButton{
+    font-size: 30px;
+    background-color: black;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    margin-left: 55%;
+    width: 20%;
+}
+.noAccount {
+      font-size: 19px;
+      color: blue;
+      text-decoration-line: underline;
+      position: absolute;
+      bottom: 50px;
+      margin-left: 55%;
+      font-family: 'Open Sans';
+}
+.title{
+    font-Size: 500px;
+    color: white;
+    font-family: 'Playfair Display';
+    line-height: 400px;
+}
+.usernameLabel{
+    font-size: 25px;
+    font-family: 'Open Sans';
+    position: absolute;
+    bottom: 345px;
+    margin-left: 55%;
+}
+.usernameField{
+    font-size: 30px;
+    position: absolute;
+    bottom: 300px;
+    margin-left: 55%;
+    width: 25%;
+}
+.passwordLabel{
+    font-size: 25px;
+    font-family: 'Open Sans';
+    position: absolute;
+    bottom: 245px;
+    margin-left: 55%;
+}
+.passwordField{
+    font-size: 30px;
+    position: absolute;
+    bottom: 200px;
+    margin-left: 55%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 25%;
+}
+.tagLine{
+    font-size: 30px;
+    position: absolute;
+    top: 400px;
+    margin-left: 55%;
+    font-family: 'Open Sans';
+    font-weight: bold;
+}
+.image{
+    position: absolute;
+    top: 20px;
+    width: 35%;
+    margin-left: 52%;
+}

@@ -1,36 +1,20 @@
 import './App.css';
-import picture from './music-clipart.png';
+import HomePage from './pages/Home.js';
+import {Router, Routes, Route, Link } from "react-router-dom";
+import Account from './pages/CreateAccount'
 
 function App() {
   return (
-    <div> 
-      <div className="row">
-        <div className="column">
-      <text
-            style={{
-              fontSize: 400,
-              color: 'white',
-            }}>
-            In Tune
-          </text>
-      </div>
-        <div className="column2">
-          <text
-            style={{
-              fontSize: 20,
-              color: 'black',
-              
-            }} className="text3">
-              Where the music happens.
-            </text>
-          <input type="text" id="username" name="username" className="text1"></input>
-          <input type="text" id="password" name="password" className="text2"></input>
-          <button className="button1">sign in</button>
-          <button className="button2">create account</button>
-          <img className="image" src={picture} alt="music"/>
+    <div>
+      <HomePage>
+      <Router>
+        <div>
+            <Routes path="/">
+                <Route path='CreateAccount' element={<Account/>}/>
+            </Routes>
         </div>
-      </div>
-      
+      </Router>
+      </HomePage>
     </div>
   );
 }
