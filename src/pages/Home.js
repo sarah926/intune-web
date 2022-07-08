@@ -1,10 +1,16 @@
 import picture from '../H copy.png';
 import './Home.css'
+import {Navbar} from "react-bootstrap"
 const signInHandler = Credential => {
     console.log("sign in");
 }
 function Home() {
     return(
+        <Navbar>
+            <Link to={"/CreateAccount"}>
+                <h1>Home</h1>
+            </Link>
+        </Navbar>
         <div className="row">
             <div className="column">
                 <text className="title">

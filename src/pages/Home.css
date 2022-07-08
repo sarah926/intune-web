@@ -1,20 +1,19 @@
 .row {
     display: flex;
     background-color: red;
-    min-height: 900px;
     display: inline;
 }
 .column {
     flex: 50%;
     max-width: 50%;
     background-color: lightseagreen;
-    min-height: 100%;
-    height: 100%;
+    height: 100vh;
 }
 .column2 {
     flex: 50%;
     background-color: white;
     align-items: center;
+    height: 100vh;
 }
 .signButton{
     font-size: 30px;
