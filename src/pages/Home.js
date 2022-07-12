@@ -1,11 +1,14 @@
 import picture from '../H copy.png';
 import './Home.css'
 import {Navbar} from "react-bootstrap"
+import { Link, useHistory } from 'react-router-dom';
+
 const signInHandler = Credential => {
     console.log("sign in");
 }
 function Home() {
     return(
+        <div>
         <Navbar>
             <Link to={"/CreateAccount"}>
                 <h1>Home</h1>
@@ -34,6 +37,7 @@ function Home() {
                     <img className="image" src={picture} alt="music"/>
                 
             </div>
+        </div>
         </div>
     );
 }
